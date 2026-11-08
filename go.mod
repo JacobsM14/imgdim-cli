@@ -1,4 +1,4 @@
-module github.com/JacobsM14/img-relation-cli
+module github.com/JacobsM14/imgdim
 
 go 1.27.3
 

@@ -4,13 +4,13 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/JacobsM14/img-relation-cli/internal"
+	"github.com/JacobsM14/imgdim/internal"
 
 	"github.com/spf13/cobra"
 )
 
 var rootCmd = &cobra.Command{
-	Use:           "img-relation",
+	Use:           "imgdim",
 	Short:         "Show image dimensions and aspect ratio",
 	SilenceUsage:  true,
 	SilenceErrors: true,
