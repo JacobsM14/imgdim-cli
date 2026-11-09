@@ -2,7 +2,7 @@
 
 A CLI that shows the width, height and aspect ratio of an image.
 
-Formats: PNG, JPEG and GIF.
+Formats: PNG, JPEG, GIF and WEBP.
 
 ## Installation
 
