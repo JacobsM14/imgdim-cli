@@ -19,7 +19,7 @@ var rootCmd = &cobra.Command{
 		if len(args) != 0 {
 			return nil, cobra.ShellCompDirectiveNoFileComp
 		}
-		return []string{"png", "jpg", "jpeg", "gif"}, cobra.ShellCompDirectiveFilterFileExt
+		return []string{"png", "jpg", "jpeg", "gif", "webp"}, cobra.ShellCompDirectiveFilterFileExt
 	},
 	RunE: func(cmd *cobra.Command, args []string) error {
 		info, err := internal.GetImageInfo(args[0])

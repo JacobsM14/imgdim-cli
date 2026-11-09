@@ -7,6 +7,8 @@ import (
 	_ "image/jpeg"
 	_ "image/png"
 	"os"
+
+	_ "golang.org/x/image/webp"
 )
 
 type AspectInfo struct {
