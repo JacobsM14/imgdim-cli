@@ -17,7 +17,12 @@ imgdim photo.png
 ```
 
 ```
-Width: 1920, Height: 1080, Aspect Ratio: 1.78
+Width: 1920
+Height: 1080
+Aspect Ratio: 1.78
+Orientation: Horizontal
+Simplified: 16:9
+Common Ratio: 16:9
 ```
 
 ## Shell completion
