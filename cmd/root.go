@@ -22,11 +22,12 @@ var rootCmd = &cobra.Command{
 		return []string{"png", "jpg", "jpeg", "gif"}, cobra.ShellCompDirectiveFilterFileExt
 	},
 	RunE: func(cmd *cobra.Command, args []string) error {
-		width, height, err := internal.GetImageDimensions(args[0])
+		info, err := internal.GetImageInfo(args[0])
 		if err != nil {
 			return err
 		}
-		fmt.Printf("Width: %d, Height: %d, Aspect Ratio: %.2f\n", width, height, float64(width)/float64(height))
+
+		fmt.Printf("Width: %d\nHeight: %d\nAspect Ratio: %.2f\nOrientation: %s\nSimplified: %s\nCommon Ratio: %s\n", info.Width, info.Height, info.Ratio, info.Orientation, info.Simplified, info.Common)
 		return nil
 	},
 }
